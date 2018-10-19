@@ -1,0 +1,49 @@
+<!DOCTYPE html">
+<html>
+
+<head>
+  <title>Un premier formulaire</title>
+  <!--"bouton radio" sert à choisir des choix uniques, dans des cas de chix multiples, on choisira d 'utiliser une "checkbox"-->
+</head>
+
+<body>
+  <form action="mailto:bertrand.oscar@oracle.fr" method="post">
+    <table>
+
+      <tr>
+        <td>Entrez votre nom</td>
+        <td><input type="text" name="nom"></td>
+      </tr>
+      <tr>
+        <td>Entrez votre adresse e-mail</td>
+        <td><input type="text" name="email"></td>
+      </tr>
+      <tr>
+        <td>Etes-vous client de la fnac ?</td>
+        <td>OUI <input type="radio" name="client" value="oui" checked>
+          <!-- mettre dans name(client) le meme nom permet de ne pas pouvoir cocher oui et non a la fois-->
+          NON <input type="radio" name="client" value="non"></td>
+      </tr>
+
+      <tr>
+        <td><input type="submit" value="Envoyer"></td>
+        <td><input type="reset" value="Annuler"></td>
+      </tr>
+      <tr>
+        <td>
+          <select name="selector" id="selector">
+            <option value="0" class="0">faire un choix</option>
+            <option value="1" class="ch 1">choix1</option>
+            <option value="2" class="ch 2">choix2</option>
+            <option value="3" class="ch 3">choix3</option>
+          </select>
+        </td>
+      </tr>
+
+    </table>
+
+
+
+
+
+</html>

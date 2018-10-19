@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>mon fichier JavaScript</title>
+
+    <script>
+        function majuscule() {
+            var c = document.oualim.Email.value.toUpperCase();//decrire tout le chemin : doc,name,mail,value(qui represente la valeur tapé dans le champ)
+            document.oualim.Email.value = c;// la valeur de la ligne 13 (qui est en MAJUSCULE) remplace la valeur du champ email.
+            alert("voici la majuscule " + c);
+        };
+        
+    </script>
+
+</head>
+
+<body>
+    <form name="oualim">
+        <p>entrer votre nom <input type="text" name="nom" /></p>
+        <p>entrer votre adresse mail <input type="email" name="Email" /></p>
+        <p>
+            Connaissez vous MediaForms?
+            oui <input type="radio" value="oui" />
+            non<input type="radio" value="non" />
+        </p>
+        <input type="submit" value="Envoyer">
+        <input type="submit" value="Annuler">
+        <input type="button" value="Majuscule" onclick="majuscule()">
+        <!-- "onclick veut dire qu'il execute la fonction majuscule des qu'on clique dessus" -->
+       <!--<input type="button"
+              value="resultat"
+              onclick="carre(5);" />-->
+    </form>
+</body>
+
+</html>
+
+Zone de message
+
+
+Envoyer un message à @oualim
